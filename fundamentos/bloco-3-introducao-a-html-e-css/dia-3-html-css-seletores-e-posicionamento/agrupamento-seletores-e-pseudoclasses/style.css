@@ -1,0 +1,12 @@
+h1, p{
+    text-align: center;
+}
+
+li:hover{
+    background-color: rgb(97, 90, 90);
+    color: white;
+}
+
+li:active{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
