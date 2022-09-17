@@ -1,3 +1,23 @@
 div:hover{
     border: 4px solid black;
 }
+
+div:nth-of-type(1){
+    background-color: Crimson;
+}
+
+div:nth-of-type(2){
+    background-color: Thistle;
+}
+
+div:nth-of-type(3){
+    background-color: ghostwhite;
+}
+
+div:nth-of-type(4){
+    background-color: darkgreen;
+}
+
+div:nth-of-type(5){
+    background-color: lightgreen;
+}
