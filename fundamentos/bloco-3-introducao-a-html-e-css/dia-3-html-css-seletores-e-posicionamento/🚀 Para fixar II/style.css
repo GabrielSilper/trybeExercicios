@@ -2,30 +2,8 @@ div:hover{
     border: 4px solid black;
 }
 
-div:nth-of-type(1) h3{
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 23px;
-}
-
-div:nth-of-type(2){
-    background-color: Thistle;
-}
-
-div:nth-of-type(3){
-    background-color: ghostwhite;
-}
-
-div:nth-of-type(4){
-    background-color: darkgreen;
-}
-
-div:nth-of-type(5){
-    color: aqua;
-}
-
 div:nth-of-type(1){
-    background-color: Crimson;
+    background-color: brown;
 }
 
 div:nth-of-type(2){
@@ -34,6 +12,7 @@ div:nth-of-type(2){
 
 div:nth-of-type(3){
     background-color: ghostwhite;
+    height: 200px;
 }
 
 div:nth-of-type(4){
@@ -41,7 +20,36 @@ div:nth-of-type(4){
 }
 
 div:nth-of-type(5){
-    color: aqua;
+    background-color: lightgreen;
 }
 
+div:nth-of-type(1) h3{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+div:nth-of-type(2) h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(102, 90, 90);
+}
+
+div:nth-of-type(3) h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(55, 43, 124);
+}
+
+div:nth-of-type(4) h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(152, 141, 153);
+}
+
+div:nth-of-type(5) h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(22, 87, 27);
+}
+
+div:nth-of-type(odd) h3{
+    font-style: italic;
+    text-decoration: underline;
+}
 
