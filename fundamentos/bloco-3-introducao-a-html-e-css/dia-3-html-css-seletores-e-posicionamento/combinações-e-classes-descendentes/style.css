@@ -1,0 +1,11 @@
+.fundo-amarelo{
+    background-color: yellow;
+}
+
+.par{
+    color: green;
+}
+
+.impar{
+    text-transform: uppercase;
+}
