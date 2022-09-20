@@ -1,3 +1,7 @@
+body{
+    background-color: aqua;
+}
+
 .section-texto-legal{
     padding-bottom: 20px;
 }
@@ -6,11 +10,27 @@
     display: inline-block;
     width: 55%;
     height: 250px;
-    float: left;
     margin-right: 40px;
 }
 
 .imgStomopodaWolverine{
     width: 25%;
     margin-top: 15px;
+    border-radius: 5px;
 }
+
+.classificao-cientifica{
+    width: 55%;
+    height: 250px;
+    margin-right: 40px;
+    float: left;
+}
+
+.imgStomopoda{
+    width: 23%;
+    padding: 0.7%;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
