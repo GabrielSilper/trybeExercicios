@@ -1,0 +1,16 @@
+.section-texto-legal{
+    padding-bottom: 20px;
+}
+
+.texto-legal{
+    display: inline-block;
+    width: 55%;
+    height: 250px;
+    float: left;
+    margin-right: 40px;
+}
+
+.imgStomopodaWolverine{
+    width: 25%;
+    margin-top: 15px;
+}
