@@ -1,4 +1,4 @@
-salarioBruto = 3000;
+salarioBruto = 5400;
 let inss;
 let impostoRenda;
 let salarioDescontado;
@@ -45,4 +45,6 @@ salarioLiquido=salarioDescontado-impostoRenda;
 console.log('Seu salário descontado INSS é de: ',salarioDescontado);
 console.log('Você paga '+impostoRenda+' de imposto de renda.');
 console.log('Seu salário líquido é de: ',salarioLiquido);
-console.log(salarioLiquido-(salarioBruto*0.17));
+if (salarioBruto>=3000) {
+    console.log('Seu salário com o desconto da Trybe: '+(salarioLiquido-(salarioBruto*0.17)));
+}
