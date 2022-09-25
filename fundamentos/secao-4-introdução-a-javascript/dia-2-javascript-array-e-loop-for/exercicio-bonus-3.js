@@ -3,7 +3,7 @@ let newNumbers = [];
 
 for (let index = 0; index < numbers.length; index++) {
     if(index===numbers.length-1){
-        newNumbers.push(numbers[index])
+        newNumbers.push(numbers[index]*2)
     }else{
         newNumbers.push(numbers[index]*numbers[index+1]);
     }
