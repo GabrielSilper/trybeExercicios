@@ -22,7 +22,7 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
-
+//Parte 1
   const decemberDaysList = [
     29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
     20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
@@ -48,6 +48,7 @@ createDaysOfTheWeek();
     }
   }
 
+  //Parte 2
   function makeBtnHoliday(feriado) {
     let btnHoliday = document.createElement('button');
     btnHoliday.id = 'btn-holiday';
@@ -58,6 +59,7 @@ createDaysOfTheWeek();
 
   makeBtnHoliday('Feriados');
 
+  //Parte 3
   function changeColorHoliday() {
     let diasFeriados = document.querySelectorAll('.holiday');
     for (let elemento of diasFeriados) {
@@ -71,6 +73,17 @@ createDaysOfTheWeek();
 
   let btnFeriados = document.querySelector('#btn-holiday');
   btnFeriados.addEventListener('click',changeColorHoliday);
+
+  //Parte 4
+  function makeBtnFriday(textFriday) {
+    let btnFriday = document.createElement('button');
+    btnFriday.id = 'btn-friday';
+    btnFriday.innerHTML = textFriday;
+    let container = document.querySelector('.buttons-container');
+    container.appendChild(btnFriday);
+  }
+  makeBtnFriday('Sexta-feira');
+
 
   
 
