@@ -10,3 +10,23 @@ A tag <ul> deve conter o id 'days'
 Os dias devem estar contidos em uma tag <li>, e todos devem ter a classe day. Ex: <li class="day">3</li>
 Os dias 24, 25 e 31 são feriados e, além da classe day, devem conter também a classe holiday. Ex: <li class="day holiday">24</li>
 Os dias 4, 11, 18 e 25 são sextas-feiras. Eles devem conter a classe day e a classe friday. Ex: <li class="day friday">4</li>
+
+Parte 2
+
+Implemente uma função que crie dinamicamente um botão com o nome “Feriados”.
+Sua função deve receber um parâmetro com a string 'Feriados'
+Adicione a este botão a ID "btn-holiday"
+Adicione este botão como filho/filha da tag <div> com classe "buttons-container"
+Parte 3
+
+Implemente uma função que muda a cor de fundo dos dias que possuem a classe "holiday".
+
+Adicione ao botão "Feriados" um evento de "click" que altere a cor de fundo dos dias que possuem a classe "holiday"
+👀 É interessante que esse botão possua também a lógica inversa. Ao ser clicado novamente, ele retorna à configuração inicial com a cor “rgb(238,238,238)”.
+
+Parte 4
+
+Implemente uma função que crie dinamicamente um botão com o nome "Sexta-feira".
+Sua função deve receber como parâmetro a string “Sexta-feira”;
+Adicione a esse botão o ID "btn-friday";
+Adicione esse botão como filho/filha da tag <div> com classe "buttons-container".
