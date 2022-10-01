@@ -93,11 +93,10 @@ function sextou() {
   for (let elemento of sextas) {
     if (elemento.innerText !== "Sexta-Feira") {
       elemento.innerText = "Sexta-Feira";
-    }
-    else if(elemento.innerText === "Sexta-Feira"){
+    } else if (elemento.innerText === "Sexta-Feira") {
       let diaAnterior = elemento.previousElementSibling.innerText;
-      elemento.innerText = parseInt(diaAnterior)+1+'';
-    } 
+      elemento.innerText = parseInt(diaAnterior) + 1 + "";
+    }
   }
 }
 let btnFriday = document.querySelector("#btn-friday");
@@ -105,42 +104,114 @@ btnFriday.addEventListener("click", sextou);
 
 //Parte 6
 function zoomIn(event) {
-  event.target.style.fontSize = '25px';
+  event.target.style.fontSize = "25px";
 }
 
 function zoomOff(event) {
-  event.target.style.fontSize = '';
+  event.target.style.fontSize = "";
 }
 
 for (let day of listDays.children) {
-  day.addEventListener('mouseenter',zoomIn);
-}
-for (let day of listDays.children) {
-  day.addEventListener('mouseout',zoomOff);
+  day.addEventListener("mouseenter", zoomIn);
+  day.addEventListener("mouseout", zoomOff);
+  day.addEventListener("click", addColorTask);
 }
 
 //Parte 7
 function addTask(whatTask) {
-  let task = document.createElement('span');
-  task.innerHTML = whatTask+'<br>';
-  let myTasks = document.querySelector('.my-tasks');
+  let task = document.createElement("span");
+  task.innerHTML = " " + whatTask + ":";
+  let myTasks = document.querySelector(".my-tasks");
   myTasks.appendChild(task);
 }
 
-addTask('Fazer exercícios');
-addTask('Ver o São Paulo ser campẽao');
-addTask('Jogar Vôlei');
+addTask("Cozinhar");
+addSubtitle("red");
+addTask("Jogar");
+addSubtitle("blue");
+addTask("Pular");
+addSubtitle("green");
 
 //Parte 8
 function addSubtitle(color) {
-  let subtitle = document.createElement('div');
-  subtitle.className = 'task';
+  let subtitle = document.createElement("div");
+  subtitle.className = "task";
   subtitle.style.backgroundColor = color;
-  let myTasks = document.querySelector('.my-tasks');
+  let myTasks = document.querySelector(".my-tasks");
   myTasks.appendChild(subtitle);
 }
 
-addSubtitle('red');
-addSubtitle('blue');
-
 //Parte 9
+function taskSelected(event) {
+  let tarefaSelecionada = event.target;
+  let tasks = document.querySelectorAll(".task");
+  if (tarefaSelecionada.className === "task") {
+    for (const iterator of tasks) {
+      iterator.className = "task";
+      iterator.style.width = "35px";
+      iterator.style.height = "35px";
+      iterator.style.border = "1px solid black";
+    }
+    tarefaSelecionada.className += " selected";
+    tarefaSelecionada.style.width = "45px";
+    tarefaSelecionada.style.height = "45px";
+    tarefaSelecionada.style.border = "3px solid gray";
+  } else {
+    tarefaSelecionada.className = "task";
+    tarefaSelecionada.style.width = "35px";
+    tarefaSelecionada.style.height = "35px";
+    tarefaSelecionada.style.border = "1px solid black";
+  }
+}
+
+let tasks = document.querySelectorAll(".task");
+for (const iterator of tasks) {
+  iterator.addEventListener("click", taskSelected);
+}
+
+//Parte 10
+function addColorTask(event) {
+  let diaSelecionado = event.target;
+  let tarefas = document.querySelectorAll(".task");
+  for (const tarefa of tarefas) {
+    if (tarefa.className === "task selected") {
+      if (diaSelecionado.style.color !== tarefa.style.backgroundColor) {
+        diaSelecionado.style.color = tarefa.style.backgroundColor;
+      } else if (diaSelecionado.style.color === tarefa.style.backgroundColor) {
+        diaSelecionado.style.color = "rgb(119,119,119)";
+      }
+    }
+  }
+}
+
+//Bônus
+function addAppointment(event) {
+  let key = event.keyCode;
+  let inputAppointment = document.querySelector("#task-input");
+  let taskList = document.querySelector(".task-list");
+  let appointment = inputAppointment.value;
+  let item = document.createElement("li");
+
+  item.innerText = appointment;
+  taskList.appendChild(item);
+  inputAppointment.value = "";
+}
+
+function addAppointmentEnter(event) {
+  let key = event.keyCode;
+  if (key == 13) {
+    let inputAppointment = document.querySelector("#task-input");
+    let taskList = document.querySelector(".task-list");
+    let appointment = inputAppointment.value;
+    let item = document.createElement("li");
+
+    item.innerText = appointment;
+    taskList.appendChild(item);
+    inputAppointment.value = "";
+  }
+}
+
+let btnAdd = document.querySelector("#btn-add");
+btnAdd.addEventListener("click", addAppointment);
+let inputAppointment = document.querySelector("#task-input");
+inputAppointment.addEventListener("keypress", addAppointmentEnter);
