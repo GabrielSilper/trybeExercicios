@@ -119,3 +119,28 @@ for (let day of listDays.children) {
   day.addEventListener('mouseout',zoomOff);
 }
 
+//Parte 7
+function addTask(whatTask) {
+  let task = document.createElement('span');
+  task.innerHTML = whatTask+'<br>';
+  let myTasks = document.querySelector('.my-tasks');
+  myTasks.appendChild(task);
+}
+
+addTask('Fazer exercícios');
+addTask('Ver o São Paulo ser campẽao');
+addTask('Jogar Vôlei');
+
+//Parte 8
+function addSubtitle(color) {
+  let subtitle = document.createElement('div');
+  subtitle.className = 'task';
+  subtitle.style.backgroundColor = color;
+  let myTasks = document.querySelector('.my-tasks');
+  myTasks.appendChild(subtitle);
+}
+
+addSubtitle('red');
+addSubtitle('blue');
+
+//Parte 9
