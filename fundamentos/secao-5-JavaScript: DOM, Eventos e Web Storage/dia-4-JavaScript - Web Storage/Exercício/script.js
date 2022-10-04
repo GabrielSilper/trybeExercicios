@@ -28,7 +28,7 @@ window.onload = () => {
         inputFontSize.value = '';
         refresh();
     }
-    
+
     let btnFontSize = document.querySelector('.btn-font-size');
     btnFontSize.addEventListener('click',changeFontSize);
     
@@ -39,7 +39,7 @@ window.onload = () => {
         inputLineHeight.value = '';
         refresh();
     }
-    
+
     let btnLineHeight = document.querySelector('.btn-line-height');
     btnLineHeight.addEventListener('click',changeLineHeight);
     
@@ -53,10 +53,7 @@ window.onload = () => {
     
     let btnFontFamily = document.querySelector('.btn-font-family');
     btnFontFamily.addEventListener('click',changeFontFamily);
-
     verifyLS();
-
-
 }
 
 function verifyLS(){
@@ -83,13 +80,10 @@ function verifyLS(){
 function refresh() {
     let divText = document.querySelector('.text');
     let textPage = JSON.parse(localStorage.getItem('textPage'));
-
     textPage.background = divText.style.backgroundColor;
     textPage.color = divText.style.color; 
     textPage.fontSize = divText.style.fontSize;
     textPage.lineHeight = divText.style.lineHeight;
-    textPage.fontFamily = divText.style.fontFamily
-
+    textPage.fontFamily = divText.style.fontFamily;
     localStorage.setItem('textPage', JSON.stringify(textPage));
-
 }
