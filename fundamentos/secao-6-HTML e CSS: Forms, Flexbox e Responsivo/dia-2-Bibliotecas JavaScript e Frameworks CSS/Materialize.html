@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício Forms</title>
-    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <h1>Header da página</h1>
@@ -19,17 +18,17 @@
             minlength="10"
             maxlength="40"
             id="name"
-          />
+            />
         </section>
         <section>
-          <label for="email">E-mail:</label>
+          <label for="email" class="block">E-mail:</label>
           <input
             type="text"
             name="email"
             minlength="10"
             maxlength="50"
             id="email"
-          />
+            />
         </section>
         <section>
           <label for="" class="block">Destino Preferido:</label>
@@ -40,17 +39,21 @@
         </section>
         <section>
           <label for="response" id="label-response" class="block">
-            Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+            Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+            TrybeTrip?
           </label>
           <textarea name="" id="response" cols="80" rows="10" maxlength="500"></textarea>
         </section>
         <section>
-          <label for="" class="block">Qual a melhor data para realizar sua viagem?</label>
+          <label for="" class="block">Qual a melhor data para realizar sua
+            viagem?</label>
           <input type="date" />
         </section>
         <section>
-          <input type="checkbox" />Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?<br>
-          <input type="checkbox" id="check-agreement"/>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          <input type="checkbox" />Gostaria de receber outras incríveis
+          oportunidades oferecidas pela Trybe?<br>
+          <input type="checkbox" id="check-agreement"/>Concordo que imagens das
+          minhas férias poderão ser usadas na divulgação de concursos futuros.
         </section>
       </fieldset>
       <button type="submit" id="btn-submit">Enviar</button>
