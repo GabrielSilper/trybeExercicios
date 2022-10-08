@@ -5,41 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício Forms</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <h1>Header da página</h1>
     <form action="" method="get">
-        <fieldset>
-          <section>
-            <label for="name">Nome:</label>
-            <input type="text" name="name" id="name" />
-          </section>
-          <section>
-            <label for="email">E-mail:</label>
-            <input type="text" name="email" id="email" />
-          </section>
-          <section>
-              <input type="radio" name="opcao" value="op1" id="" />Opção 1
-              <input type="radio" name="opcao" value="op2" id="" />Opção 2
-              <input type="radio" name="opcao" value="op3" id="" />Opção 3
-              <input type="radio" name="opcao" value="op4" id="" />Opção 4
-          </section>
-          <section>
-              <label for="response" id="label-response">Espaço para digitar a resposta:</label>
-              <textarea name="" id="response" cols="30" rows="10"></textarea>
-          </section>
-          <section>
-            <label for="">Data:</label>
-            <input type="date" />
-          </section>
-          <section>
-            <input type="checkbox" />Concordo 1 
-            <input type="checkbox" />Concordo 2
-          </section>
-        </fieldset>
-        <button type="submit">Enviar</button>
-        <button type="reset">Apagar</button>
+      <fieldset>
+        <section>
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            name="name"
+            minlength="10"
+            maxlength="40"
+            id="name"
+          />
+        </section>
+        <section>
+          <label for="email">E-mail:</label>
+          <input
+            type="text"
+            name="email"
+            minlength="10"
+            maxlength="50"
+            id="email"
+          />
+        </section>
+        <section>
+          <label for="" class="block">Destino Preferido:</label>
+          <input type="radio" name="opcao" value="op1" id="" />Cidade
+          <input type="radio" name="opcao" value="op2" id="" />Campo
+          <input type="radio" name="opcao" value="op3" id="" />Praia
+          <input type="radio" name="opcao" value="op4" id="" />Montanhas
+        </section>
+        <section>
+          <label for="response" id="label-response" class="block">
+            Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+          </label>
+          <textarea name="" id="response" cols="80" rows="10" maxlength="500"></textarea>
+        </section>
+        <section>
+          <label for="" class="block">Qual a melhor data para realizar sua viagem?</label>
+          <input type="date" />
+        </section>
+        <section>
+          <input type="checkbox" />Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?<br>
+          <input type="checkbox" id="check-agreement"/>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        </section>
+      </fieldset>
+      <button type="submit" id="btn-submit">Enviar</button>
+      <button type="reset">Apagar</button>
     </form>
+    <script src="./script.js"></script>
   </body>
 </html>

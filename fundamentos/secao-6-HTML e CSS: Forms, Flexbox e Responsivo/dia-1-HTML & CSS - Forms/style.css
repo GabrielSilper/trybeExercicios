@@ -1,11 +1,19 @@
-#label-response{
-    display: block;
+.block {
+  display: block;
 }
 
-body{
-    font-size: 20px;
+body {
+  font-size: 20px;
 }
 
-section{
-    margin-bottom: 25px;
+section {
+  margin-bottom: 25px;
+}
+
+fieldset {
+  margin-bottom: 25px;
+}
+
+button {
+  margin-bottom: 25px;
 }
