@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+/* Header ---------------------------------- */
+
+.header-content{
+  display: flex;
+  background-color: rgb(34, 31, 31);
+  color: white;
+  font-weight: 900;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-content > h3{
+  color: gray;
+  text-decoration: underline;
+}
+
+/* Texto ---------------------------------- */
+
+.section-text{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Cards ---------------------------------- */
+
+.section-cards{
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 500px;
+  gap: 16px;
+}
+
+.card{
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0,0.4);
+  border-radius: 8px;
+}
+
+/* Footer ---------------------------------- */
+
+hr{
+  width: 100px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.header-img {
+  width: 70px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}

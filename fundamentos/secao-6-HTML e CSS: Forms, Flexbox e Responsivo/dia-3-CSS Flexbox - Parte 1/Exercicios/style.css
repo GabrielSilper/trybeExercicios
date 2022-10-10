@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-content{
+    display: flex;
+    background-color: rgb(34, 31, 31);
+    color: white;
+    font-weight: 900;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: var(--tam);
+    height: var(--tam);
+
+    --tam : 45px;
+}
+
+.header-content a {
+    color: gray;
+}
