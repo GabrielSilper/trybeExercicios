@@ -17,3 +17,6 @@ const robot = (rightAnswers, studentAnswers) => {
 }
 
 console.log(test(['A','B','C','D'],['A','N.A','F','D'],robot));
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+console.log(test(RIGHT_ANSWERS,STUDENT_ANSWERS,robot));
