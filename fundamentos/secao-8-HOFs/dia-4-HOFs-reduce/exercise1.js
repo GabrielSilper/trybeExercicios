@@ -1,15 +1,11 @@
-const arrays = [
-    ['1', '2', '3'],
-    [true],
-    [4, 5, 6],
-  ];
-  
-  function flatten() {
-    // escreva seu código aqui
-    return arrays.reduce( (cum,cur)=> {
-        cum = cum.concat(cur)
-        return cum;
-    }, [])
-  }
+const arrays = [["1", "2", "3"], [true], [4, 5, 6]];
 
-  console.log(flatten());
+function flatten() {
+  // escreva seu código aqui
+  return arrays.reduce((cum, cur) => {
+    cum = cum.concat(cur);
+    return cum;
+  }, []);
+}
+
+console.log(flatten());
