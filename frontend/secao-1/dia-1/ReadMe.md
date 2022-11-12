@@ -1,0 +1,1 @@
+Exercícios do dia 1 sobre ambiente de desenvolvimento da seção 1 Introdunção ao Frontend e Javascript Assíncrono.
