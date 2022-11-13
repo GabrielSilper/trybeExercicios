@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Ubuntu&display=swap");
+
+body {
+  text-align: center;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  color: goldenrod;
+  text-shadow: 1px 1px 2px black, 5px 5px 2px black;
+}
+
+h3 {
+  font-family: "Comic Neue", cursive;
+  color: white;
+  font-size: 35px;
+  text-shadow: 1px 1px 0 rgb(65, 160, 108);
+}
+
+button {
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 0 20px 2px black;
+}
+
+button:active {
+    scale: 0.95;
+}
+
+img {
+  border: 5px solid white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 5px;
+}
